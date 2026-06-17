@@ -6,7 +6,7 @@ rem Step 1: copy output.nc to output1.nc (overwrite without asking)
 copy /Y output.nc output1.nc
 
 rem Step 2: run the model
-gotm_sp1_2.exe
+gotm_sp1_2_2.exe
 
 "C:\Program Files\R\R-4.2.1\bin\x64\Rscript.exe" "C:\Users\mestr\OneDrive - IOLR\MEWS\R_codes\PO4_model_fit00.R" 
 "C:\Program Files\R\R-4.2.1\bin\x64\Rscript.exe" "C:\Users\mestr\OneDrive - IOLR\MEWS\R_codes\Phyto_model_fit00.R" 

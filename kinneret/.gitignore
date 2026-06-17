@@ -16,6 +16,7 @@ Rplots.pdf
 
 # model outputs and inputs
 *.nc
+!Bathymetry/bathymetry_400m_smoothed.nc
 *.dat
 *.obs
 
