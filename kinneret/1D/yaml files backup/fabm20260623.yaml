@@ -6,12 +6,12 @@ instances:
       wdz: -0.20                    # vertical velocity of detritus (positive: upwards/floating, negative: downwards/sinking) (m/d), default = -4.5
       wpo4: -1.76                      # vertical velocity of suspended P-Fe (positive: upwards/floating, negative: downwards/sinking) (m/d), default = -1.0
       dn: 0.0018                    # detritus mineralization rate (1/d), default = 0.003
-      dn_sed: 0.00006               # sediment mineralization rate (1/d), default = 0.002 0.0098
+      dn_sed: 0.00009               # sediment mineralization rate (1/d), default = 0.002 0.0098
       mbnnrate: 0.20                # mineralization by nitrate rate relative to dn mineralization by oxygen (-), default = 0.1
-      mbsrate: 0.20                 # mineralization by sulphate rate relative to dn mineralization by oxygen (-), default = 0.1
+      mbsrate: 0.30                 # mineralization by sulphate rate relative to dn mineralization by oxygen (-), default = 0.1
       nitrif_rate: 0.003          # nitrification rate (1/d), default=0.1
-      den_frac_denanmx: 0.80        # relative contribution of denitrification out of total denitrification + anammox (-), default = 1.0
-      den_frac_denanmx_sed: 0.80    # relative contribution of denitrification out of total denitrification + anammox in sediment (-), default = 1.0
+      den_frac_denanmx: 0.90        # relative contribution of denitrification out of total denitrification + anammox (-), default = 1.0
+      den_frac_denanmx_sed: 0.90    # relative contribution of denitrification out of total denitrification + anammox in sediment (-), default = 1.0
       ade_r0: 0.0                     # maximum chemoautolithotrophic denitrification rate (1/d), default = 0.1
       alphaade: 1.0                   # half-saturation constant for chemoautolithotrophic denitrification (mmol N/m3), default = 1.0
       q10_rec: 0.145                # temperature dependence of detritus remineralization (1/K), default = 0.175; 0.078
@@ -24,8 +24,8 @@ instances:
       eroratepo4: 0.04               # P-Fe erosion rate (1/d), default = 6.0
       po4ret: 1.00               # phosphate retention rate, oxic sediments (-), default = 0.18
       pburialrate: 2.2e-08          # phosphate burial rate (1/d), default = 0.007 2e-08
-      fl_burialrate: 0.0e-09          # sediment burial rate (1/d), default = 0.001
-      pliberationrate: 1.0e-07        # phosphate liberation rate, anoxic sediments (1/d), default = 0.1
+      fl_burialrate: 1.0e-09          # sediment burial rate (1/d), default = 0.001
+      pliberationrate: 2.0e-06        # phosphate liberation rate, anoxic sediments (1/d), default = 0.1
       ipo4th: 100                 # maximum phosphorus density available for burial (mmol P/m2), default = 100.0
       br0: 0.000158                     # bioresuspension rate (1/d), default = 0.03
       fds: 0.85                    # fraction of sediment remineralization fueled by denitrification (-), default = 0.7
@@ -44,11 +44,11 @@ instances:
       o2: 278.0                         # oxygen (mmol O2/m3)
       po: 0.06                         # phosphate (mmol P/m3)
       si: 1.0                           # silicate (mmol Si/m3)
-      fl_c: 250000                      # carbon fluff (mmol C/m2) ~4*fl_n
-      fl_p: 900                        # phosphorus fluff (mmol P/m2)
-      fl_n: 24700                       # nitrogen fluff (mmol N/m2) 27*fl_p
+      fl_c: 200000                      # carbon fluff (mmol C/m2)
+      fl_p: 400                        # phosphorus fluff (mmol P/m2)550
+      fl_n: 30000                       # nitrogen fluff (mmol N/m2)
       fl_si: 14                        # silica fluff (mmol Si/m2)
-      pb: 3000                           # phosphate bound to iron in sediment (mmol P/m2)
+      pb: 3200                           # phosphate bound to iron in sediment (mmol P/m2)
       pw: 0.2                         # phosphate bound to iron in water (mmol P/m3)
   ammonium_dust_flux:
     model: external_surface_flux        # change to external_surface_flux if supplied from external file

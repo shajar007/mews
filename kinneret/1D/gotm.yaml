@@ -8,8 +8,8 @@ location:                       #
 water_balance_method: 3         # residual stream to correct water balance due to evap, precip, in- and outflows [0=none, 1=surface, 2=all layers, 3=free surface; default=0]
 time:                           #
   method: 2                     # method to specify simulated period [1=number of time steps, 2=start and stop, 3=start and number of time steps; default=2]
-  start: 2012-02-12 11:00:00    # start date and time [yyyy-mm-dd HH:MM:SS; default=2017-01-01 00:00:00]
-  stop: 2019-02-12 12:00:00     # stop date and time [yyyy-mm-dd HH:MM:SS; default=2018-01-01 00:00:00]
+  start: 2011-02-03 11:00:00    # start date and time [yyyy-mm-dd HH:MM:SS; default=2017-01-01 00:00:00]
+  stop: 2020-02-02 12:00:00     # stop date and time [yyyy-mm-dd HH:MM:SS; default=2018-01-01 00:00:00]
   dt: 3600.0                    # time step for integration [s; min=0.0; default=3600.0]
   cnpar: 1.0                    # implicitness of diffusion scheme [fraction; min=0.0; max=1.0; default=1.0]
 grid:                           #
@@ -467,7 +467,7 @@ streams:                        #
       constant_value: 0.0       # value to use throughout the simulation [g m-3; default=0.0]
       file: jordan_chem.dat     # path to file with time series [default=abiotic_water_sNPOMW.dat]
       column: 3                 # index of column to read from [default=1] NPOM
-      scale_factor: 71.43       # scale factor to be applied to values read from file [default=71.43]1420
+      scale_factor: 5000       # scale factor to be applied to values read from file [default=71.43]
       offset: 0.0               # offset to be added to values read from file [g m-3; default=0.0]
     selmaprotbas_po:            # phosphate
       method: 2                 # method [0=constant, 2=from file; default=2]
@@ -495,7 +495,7 @@ streams:                        #
       constant_value: 0.0       # value to use throughout the simulation [g m-3; default=0.0]
       file: jordan_chem.dat     # path to file with time series [default=abiotic_water_sDPOMW.dat]
       column: 6                 # index of column to read from [default=1]
-      scale_factor: 29.86       # scale factor to be applied to values read from file [default=1.0 ; 29.86]
+      scale_factor: 200       # scale factor to be applied to values read from file [default=1.0 ; 29.86]
       offset: 0.0               # offset to be added to values read from file [g m-3; default=0.0]
     selmaprotbas_si:            # Si
       method: 0                 # method [0=constant, 2=from file; default=2]
@@ -655,7 +655,7 @@ streams:                        #
       constant_value: 0.0       # value to use throughout the simulation [g m-3; default=0.0]
       file: yarmuch_chem.dat    # path to file with time series [default=abiotic_water_sDPOMW.dat]
       column: 6                 # index of column to read from [default=1]
-      scale_factor: 29.86       # scale factor to be applied to values read from file [default=1.0]
+      scale_factor: 29.86       # scale factor to be applied to values read from file [default=29.86]
       offset: 0.0               # offset to be added to values read from file [g m-3; default=0.0]
     selmaprotbas_si:            # Si
       method: 0                 # method [0=constant, 2=from file; default=2]
